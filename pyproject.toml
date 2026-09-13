@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sai-ai-engineering-projects"
+version = "0.1.0"
+description = "Reproducible machine learning and AI engineering projects"
+requires-python = ">=3.10"
+authors = [{ name = "Sai Mudunuri" }]
+dependencies = []
+
+[project.optional-dependencies]
+vision = ["torch>=2.2", "torchvision>=0.17", "Pillow>=10"]
+multimodal = ["torch>=2.2", "transformers>=4.45", "Pillow>=10"]
+finetune = ["torch>=2.2", "transformers>=4.45", "peft>=0.13", "accelerate>=1.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
