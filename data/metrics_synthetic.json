@@ -1,0 +1,5 @@
+{
+  "queue_depth": 140,
+  "worker_p95_ms": 850,
+  "dependency_error_rate": 0.03
+}
